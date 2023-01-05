@@ -1,0 +1,22 @@
+{
+    "blogs":[
+        {
+            "title":"open sources", 
+            "body": "The term open source means little to anyone outside the arena, but means the world to someone learning to code. In places like Bootstrap, Github and Wordpress, there’s a culture of camaraderie that’s very difficult to find anywhere else", 
+            "author":"mario", 
+            "id": 1
+            
+        },
+        {
+            "title":"My new Home",
+            "body": "lorem ipsum...", 
+            "author":"Alex", 
+            "id": 2},
+        {
+            "title":"My new car", 
+            "body": "lorem ipsum...", 
+            "author":"mario", 
+            "id": 3}
+        ]
+}   
+

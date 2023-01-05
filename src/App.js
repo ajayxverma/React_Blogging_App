@@ -1,25 +1,32 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Home from './components/Home';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import Mainnavbar from './components/Mainnavbar';
+import AllBlogs from './components/AllBlogs';
+import BlogDetails from './components/BlogDetails';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Mainnavbar/>
+        <Routes>
+          <Route path='/' element = { <Home/> }/>
+          <Route path='/blogs' element = { <AllBlogs/> } />
+          <Route path='/blogs/:id' element = {<BlogDetails/>} />
+        </Routes>
+        
+          
+      
+      
+    </Router>  
+   
   );
 }
 
 export default App;
+
+
+//Run the json server 
+// the command to run the json server is : npx json-server --watch Data/BlogData.json --port 8000
